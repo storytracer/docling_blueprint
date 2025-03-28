@@ -182,36 +182,6 @@ docling path/to/document.pdf --ocr-engine tesseract
 docling path/to/document.pdf --force-full-page-ocr
 ```
 
-### Missing Models
-
-Pre-download models for offline use:
-
-```bash
-docling-tools models download
-```
-
-Specify a custom model path:
-
-```bash
-docling path/to/document.pdf --artifacts-path /path/to/model/artifacts
-```
-
-### Image Rendering Problems
-
-If images don't appear correctly in your Markdown viewer:
-
-```bash
-# Try embedded images instead of references
-docling path/to/document.pdf --image-mode embedded
-```
-
-### Performance Optimization
-
-```bash
-# Limit thread usage for better control on shared systems
-OMP_NUM_THREADS=4 docling path/to/document.pdf
-```
-
 ## License
 
 This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for details.
